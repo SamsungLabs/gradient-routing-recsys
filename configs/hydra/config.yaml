@@ -1,0 +1,18 @@
+defaults:
+  - _self_
+  - dataset: ml_32m_explicit_labeled
+  - model: hierarchical_recommender
+  - user_pref_net: wide_deep
+  - recommender_net: wide_deep
+  - hparams_tuning: config
+  - visualisation: config
+
+clearml:
+  project_name: "gradient_routing_recsys"
+  output_uri: ???
+
+# GPU configuration
+gpu_id: 0
+
+# Worker configuration
+worker: 0

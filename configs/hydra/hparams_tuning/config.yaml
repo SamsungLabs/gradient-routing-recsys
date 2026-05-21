@@ -1,0 +1,5 @@
+algo: bayes  # [exhaustive, random, bayes]
+early_stop: 10
+max_evals: 25
+display_file: "hyper.display"
+output_file: "hyper.result"

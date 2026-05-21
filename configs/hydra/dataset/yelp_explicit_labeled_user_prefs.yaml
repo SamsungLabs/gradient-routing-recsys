@@ -1,0 +1,11 @@
+name: "yelp"
+recbole_config_file: "configs/recbole/yelp/explicit_labeled_user_prefs.yaml"
+
+cat_feat_field: "categories"
+
+user_feat_cols: ["user_id", "user_name", "user_review_count", "yelping_since", "user_useful", "user_funny", "user_cool", "elite", "fans", "average_stars", "compliment_hot", "compliment_more", "compliment_profile", "compliment_cute", "compliment_list", "compliment_note", "compliment_plain", "compliment_cool", "compliment_funny", "compliment_writer", "compliment_photos"]
+
+user_pref_net:
+  cols_to_remove: ['business_id', 'useful', 'funny', 'cool', 'date', 'item_name', 'address', 'city', 'state', 'postal_code', 'latitude', 'longitude', 'item_stars', 'item_review_count', 'is_open', 'categories', "label"]
+recommender_net:
+  cols_to_remove: ["date", "label"]

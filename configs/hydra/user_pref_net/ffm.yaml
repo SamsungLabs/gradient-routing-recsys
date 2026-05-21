@@ -1,0 +1,11 @@
+_target_: recbole.model.context_aware_recommender.FFM
+
+config: {
+  LABEL_FIELD: None,
+  device: "cuda",
+  double_tower: False,
+  numerical_features: [],
+  embedding_size: 10,
+  fields: ~,
+}
+dataset: null

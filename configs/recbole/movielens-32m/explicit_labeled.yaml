@@ -1,0 +1,27 @@
+# dataset config : Context-aware Recommendation
+load_col:
+    inter: [ 'user_id', 'item_id', 'rating', 'timestamp']
+    user: ['user_id']
+    item: ['item_id', 'movie_name', 'release_year', 'type']
+threshold: {'rating': 4.0}
+
+# model config
+# TBD after hyperparameter tuning
+embedding_size: 64
+double_tower: True
+
+# Training and evaluation config
+epochs: 25
+train_batch_size: 4096
+eval_batch_size: 4096
+learning_rate: 0.001
+stopping_step: 5
+eval_args:
+  split: {'RS':[0.8,0.1,0.1]}
+  order: TO
+  group_by: "user"
+  mode: labeled
+train_neg_sample_args: null
+metrics: ['AUC', 'LogLoss']
+valid_metric: AUC
+metric_decimal_place: 5

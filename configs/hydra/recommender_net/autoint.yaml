@@ -1,0 +1,16 @@
+_target_: recbole.model.context_aware_recommender.AutoInt
+
+config: {
+  LABEL_FIELD: None,
+  device: "cuda",
+  double_tower: False,
+  has_residual: True,
+  numerical_features: ["user_prefs"],
+  embedding_size: 10,
+  attention_size: 16,
+  n_layers: 3,
+  num_heads: 2,
+  dropout_probs: [ 0.2,0.2,0.2 ],
+  mlp_hidden_size: [ 128,128 ]
+}
+dataset: null

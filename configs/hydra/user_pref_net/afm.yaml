@@ -1,0 +1,13 @@
+_target_: recbole.model.context_aware_recommender.AFM
+
+config: {
+  LABEL_FIELD: None,
+  embedding_size: 10,
+  device: "cuda",
+  double_tower: False,
+  numerical_features: [],
+  attention_size: 25,
+  dropout_prob: 0.3,
+  reg_weight: 2.0,
+}
+dataset: null

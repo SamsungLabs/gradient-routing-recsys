@@ -1,0 +1,12 @@
+_target_: recbole.model.context_aware_recommender.WideDeep
+
+config: {
+  LABEL_FIELD: None,
+  device: "cuda",
+  double_tower: False,
+  numerical_features: [],
+  embedding_size: 10,
+  mlp_hidden_size: [ 32, 16, 8 ],
+  dropout_prob: 0.1,
+}
+dataset: null

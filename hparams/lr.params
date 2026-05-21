@@ -1,0 +1,2 @@
+learning_rate uniform 0.00001,0.001
+embedding_size choice [32,64,128]

@@ -1,0 +1,15 @@
+_target_: recbole.model.context_aware_recommender.FiGNN
+
+config: {
+  LABEL_FIELD: None,
+  device: "cuda",
+  double_tower: False,
+  numerical_features: [],
+  embedding_size: 10,
+  attention_size: 16,
+  n_layers: 2,
+  num_heads: 2,
+  hidden_dropout_prob: 0.2,
+  attn_dropout_prob: 0.2,
+}
+dataset: null

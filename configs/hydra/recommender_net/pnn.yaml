@@ -1,0 +1,15 @@
+_target_: recbole.model.context_aware_recommender.PNN
+
+config: {
+  LABEL_FIELD: None,
+  device: "cuda",
+  double_tower: False,
+  numerical_features: ["user_prefs"],
+  embedding_size: 10,
+  mlp_hidden_size: [ 128, 256, 128 ],
+  dropout_prob: 0.0,
+  use_inner: True,
+  use_outer: False,
+  reg_weight: 0.0,
+}
+dataset: null

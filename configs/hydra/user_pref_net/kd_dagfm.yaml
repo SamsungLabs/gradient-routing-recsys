@@ -1,0 +1,23 @@
+_target_: recbole.model.context_aware_recommender.KD_DAGFM
+
+config: {
+  LABEL_FIELD: None,
+  device: "cuda",
+  double_tower: False,
+  numerical_features: [],
+  teacher: 'CrossNet',
+  phase: 'teacher_training',
+  type: 'outer',
+  embedding_size: 16,
+  depth: 3,
+  alpha: 0.1,
+  beta: 921.6,
+  warm_up: '',
+  t_depth: 3,
+  t_cin: [ 200, 200, 200 ],
+  final_config_dict: {
+    t_depth: 3,
+    t_cin: [ 200, 200, 200 ],
+  }
+}
+dataset: null

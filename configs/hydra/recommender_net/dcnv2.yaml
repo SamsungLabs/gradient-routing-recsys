@@ -1,0 +1,18 @@
+_target_: recbole.model.context_aware_recommender.DCNV2
+
+config: {
+  LABEL_FIELD: None,
+  device: "cuda",
+  double_tower: False,
+  numerical_features: ["user_prefs"],
+  mixed: False,
+  structure: 'stacked',
+  cross_layer_num: 3,
+  expert_num: 4,
+  low_rank: 128,
+  embedding_size: 16,
+  mlp_hidden_size: [ 768, 768 ],
+  reg_weight: 2,
+  dropout_prob: 0.2,
+}
+dataset: null

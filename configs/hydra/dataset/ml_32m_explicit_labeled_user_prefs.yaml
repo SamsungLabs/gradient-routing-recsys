@@ -1,0 +1,11 @@
+name: "ml-32m"
+recbole_config_file: "configs/recbole/movielens-32m/explicit_labeled_user_prefs.yaml"
+
+cat_feat_field: "type"
+
+user_feat_cols: ["user_id"]
+
+user_pref_net:
+  cols_to_remove: ["item_id", "timestamp", "movie_name", "release_year", "type", "label"]
+recommender_net:
+  cols_to_remove: ["timestamp", "label"]

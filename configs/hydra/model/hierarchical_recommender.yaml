@@ -1,0 +1,14 @@
+_target_: gradient_routing_recsys.models.HierarchicalRecommender
+recbole_config: null
+dataset: null
+user_pref_net: null
+recommender_net: null
+loss: 
+  _target_: torch.nn.BCEWithLogitsLoss
+cat_feat_field: null
+input_user_fields_rec_net_flag: False
+# Activation function to apply to user_pref_net_output
+# Options: softmax, sigmoid, gumbel_softmax, sparsemax, relu, silu, tanh
+user_pref_activation: softmax
+# Temperature parameter for gumbel_softmax (default: 1.0)
+gumbel_softmax_temperature: 1.0
